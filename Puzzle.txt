@@ -1,0 +1,49 @@
+from bangtal import *
+import time
+
+scene1 = Scene('퍼즐배경', 'Images/퍼즐배경.png')
+
+
+start = Object('Images/start.jpg')
+start.locate(scene1, 400, 400)
+start.show()
+
+one = Object('Images/1.png')
+one.locate(scene1, 300,470)
+two = Object('Images/2.png')
+two.locate(scene1, 450,470)
+three = Object('Images/3.png')
+three.locate(scene1, 600,470)
+four = Object('Images/4.png')
+four.locate(scene1, 750,470)
+
+five = Object('Images/5.png')
+five.locate(scene1, 300,320)
+six = Object('Images/6.png')
+six.locate(scene1, 450,320)
+seven = Object('Images/7.png')
+seven.locate(scene1, 600,320)
+eight = Object('Images/8.png')
+eight.locate(scene1, 750,320)
+
+nine = Object('Images/9.png')
+nine.locate(scene1, 300,170)
+ten = Object('Images/10.png')
+ten.locate(scene1, 450,170)
+eleven = Object('Images/11.png')
+eleven.locate(scene1, 600,170)
+twelve = Object('Images/12.png')
+twelve.locate(scene1, 750,170)
+
+thirteen = Object('Images/13.png')
+thirteen.locate(scene1, 300,20)
+fourteen = Object('Images/14.png')
+fourteen.locate(scene1, 450, 20)
+fifteen= Object('Images/15.png')
+fifteen.locate(scene1, 600,20)
+sixteen = Object('Images/16.png')
+sixteen.locate(scene1, 750,20)
+
+start_time = time.time()
+def start_onMouseAction():
+    start.hide()
